@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root { --bg-color: #0f172a; --card-bg: #1e293b; --text-color: #cbd5e1; --accent-color: #38bdf8; --heading-color: #ffffff; --border-color: #334155; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; padding-bottom: 3rem; }
+        nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem; }
+        .nav-container { max-width: 850px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: var(--heading-color); font-weight: 700; text-decoration: none; font-size: 1.2rem; }
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a { color: var(--text-color); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent-color); }
+        .container { max-width: 850px; margin: 2rem auto; padding: 0 1rem; }
+        section { background: var(--card-bg); padding: 2rem; border-radius: 16px; border: 1px solid var(--border-color); }
+        h2 { color: var(--heading-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .project-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        @media(min-width: 600px) { .project-grid { grid-template-columns: 1fr 1fr; } }
+        .project-card { background: var(--bg-color); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color); }
+        .project-title { color: var(--heading-color); font-weight: 600; margin-bottom: 0.25rem; }
+        .project-tech { font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.75rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Portfolio.inc</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>Featured Work</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-title">Management System</div>
+                    <div class="project-tech">React / Node.js</div>
+                    <p>An HR administration engine tracking internal faculty evaluation documents and file compliance checks structural workflows.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Analytics Hub</div>
+                    <div class="project-tech">Git / Maven Data</div>
+                    <p>An automated analytical summary repository projecting visual clean metrics and interactive operational milestones.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
